@@ -1,0 +1,288 @@
+arguments / 参数 / arugments存储了传递的所有实参,不知道用户传多少实参 arugments
+arguments / 在不确定函数传递参数的时候,可以用arugments来获取,所有函数都内置了的
+arguments是一个伪数组,可以进行遍历 / 具有length属性,以索引方式存储
+全局变量: 全局作用域下的变量,在全局下都可以使用,在函数内部可以使用
+局部变量: 局部作用域下的变量,在函数内部的变量就是局部变量,局部变量在函数内部使用
+函数内部没有声明直接赋值的变量也是属于全局变量.
+作用域链,内部函数访问外部函数的时候,采取链式查找决定取那个值
+变量提升 / 把所有变量声明提升到当前作用域最前面,不提升赋值操作
+value / 等价
+random / 随机的
+instanceof / 运算符 / 检测是否为数组
+Array.isArray() / 检测是否为数组
+push() / 在数组末尾添加一个或多个数组元素, push()参数直接写数组元素就可以
+unshift() / 在数组开头添加一个或者多个数组元素, unshift()
+pop() / 可以删除数组的最后一个元素,一次只能删除一个,返回被删除的数组
+shift()  / 删除数组中第一个元素,一次只能删除一个,返回被删除的数组 
+indexOf() / 从前面向后查找数组中的一个索引值,如果不存在的索引值就会返回-1
+lastindexOf() / 从后面往前面查找数组的索引值,找不到返回-1
+h1 ~ h6 表示标题标签 
+em / 倾斜标签
+del / 删除线标签
+ins / 下划线标签
+span / 小盒子 / 所有内容一行显示
+img src = '' / 图像标签 / title 提示文本,鼠标放在图片上提示文字
+a 链接外部链接 / target='_blank' / 新窗口打开链接
+<a herf = '#name'></a> / <div id = 'name'></div> / 锚点链接用法
+table 表头标签,最大的表格
+tr标签定义表格的行 / td标签定义表格的单元格 / 都必须嵌套在table中
+th标签定义表格第一行 
+align属性定义table的位置是左还是右或中间
+border属性定义边框
+cellpadding属性定义单元格内容之间的空白
+cellspacing属性定义单元格之间的空白
+width / height
+thead表格头部标签通常把第一行包含在里面
+tbody表格尾部标签通常把剩余的包含在里面
+colspan 跨列合并 / rowspan 跨行合并
+<ul> <li> </li> </ul> / 无序列表ul里面包含li
+<ol> <li> </li> </ol> / 有序列表ul里面包含li
+<dl> <dt> <dd></dd> </dl> / 自定义列表dl里面必须包含dd / dt单标签在dd的前面 
+form 表单域 / reset重重按钮
+input / 表单type属性的值 / 用户名: <input type = 'text'>
+text文本 / password 密码框 / radio 单选标签,在radio属性中设置相同的name实现二选一
+checkbox 定义多选框 / maxlength 表示密码框和文本的最大长度
+checked = 'checked'属性定义单选和复选框页面打开时久默认选择按钮
+dubmit / type的提交按钮会把表单数据发送到服务器
+reset / type的重置按钮 / button / type的普通按钮
+select下拉表单元素里面必须包含option在里面
+textarea 表单元素,用户输入内容比较多时使用
+font 字体 / background / 背景
+font-weigth: 700 / 文字边粗 font-weigth: 400 / 文字变细
+font-style: normal / 倾斜的文字变不倾斜
+text-align: center; / 设置文字的对齐方式,只能设置水平对齐
+text-decoration: underline / 下划线
+text-decortion: lien-through / 删除线
+text-decoration: none; / 去除a链接的下划线
+line-height / 设置行高 / 行高等于高度, 居中显示
+link / 引入外部文件
+ div > a / 子代选择器,只能选择div的第一个子元素 / ol li / 后代选择器
+div, p / 并集选择器,选择两个元素设置相同的属性,用逗号隔开
+伪类选择器 / :visited / 选择点击过的链接
+伪类选择器 / :hover / 选择鼠标经过的链接
+:focus / 把获得光标input表单元素选取出来 / input:focus
+块元素 / h1 / p / div / ul / ol / li / 独占一行,高宽内外边可以控制
+行内元素 / a / span / strong / em / 一行放多个,高宽不能设置
+行内块元素 / img / input / td / 同时具有块元素和行内元素的特点
+display: black / 行内元素转换为块级元素
+display: inline / 块元素转换为行内元素
+display: inline-black / 转行为行内块元素
+垂直居中 / line-height: 高度 / 行高等于高 / line-hight: 高度 / 设置垂直居中
+transparent / 颜色透明的 transparent
+background-image {url} / 背景图片
+background-repeat: no-repeat; / 背景图片不平铺
+background-position / 可以修改图片在背景的位置
+background-size: 10px 10px; / background-size指定背景图像的大小
+背景大小background-size: contion / 保持图像的纵横比并将图像缩放成背景定位区域的最大大小
+position后面可以跟方位名词或者精确单位
+position跟精确单位,第一个值是x坐标,第二个值是y坐标
+background: rgba(0, 0, 0, 0.3) / 设置背景颜色半透明
+层叠性,根据就近原则,选择最近的一个
+继承性,子级会继承父级的某些样式
+优先级 / 元素为1 / 类伪类为10 / id为100 / 行内1000 / !important无限
+优先级继承的权重为0,子级继承父级的权重为0
+border / 边框 / solid, 实线边框 / dashed / 虚线边框 / dotted / 点线边框
+border-style / 设置边框样式
+border-collapse: collapse / 合并相邻的边框
+padding 内边距,就是边框与内容的距离
+margin 外边距,可以控制盒子与盒子之间的距离
+margin可以让块级盒子水平居中 / 必须有宽度,盒子左右设置为auto
+行内元素或者行内块元素水平居中给父级添加 / text-align: center
+嵌套块元素垂直外边距塌陷,父级和子级都有外边距会塌陷
+overflow: hidden / 给父级添加可以解决嵌套块元素垂直外边距塌陷问题
+行内元素兼容性差尽量只设置左右外边距不要设置上下的,但是转换为块和行内块就行
+border-radius / 设置盒子圆角 / radius 半径一个圆的半径
+border-top-left-radius,可以分开设置圆角
+box-shadow / 给盒子添加阴影
+text-shadow / 给文字设置阴影
+float / 浮动元素脱离标准流,浮动的元素会一行显示顶部对齐,浮动元素有行内块元素特性
+浮动过后的盒子不在保留原先的位置
+如果浮动的父级宽度装不下浮动的盒子,多出的盒子会另起一行显示
+一个元素浮动,所有元素都要浮动,浮动的元素会影响浮动盒子后面的标准流,不会影响前面
+清除浮动本质就是清除浮动元素造成的影响,父元素不设置高度,会影响后面的盒子
+清除浮动后,父级会自动检测高度,父级有高度,就不会影响下面标准流的盒子了
+clear: both / 清除浮动 / 清除浮动方式: 给父元素添加 overflow:hidd 7en
+:after伪元素清除浮动 / .clearfix:after
+.clearfix:after {
+content: ''; 
+display: black;
+clear: both;
+visibility: hidden;
+} / 利用伪元素清除
+.clearfix:before,.clearfix:after,清除浮动
+content: '';
+display: table;
+.clearfix:after {
+clear: both;
+}
+清除浮动要求: / 父级没有高度, 子级盒子浮动了,影响下面布局,就需要清除浮动
+ position / 定位
+position: relative / 相对定位 / 以自己原来位置移动,原来的位置继续保留,不脱标
+position: absolute / 绝对定位 / 以有定位的父级元素来移动位置,没有父级以浏览器为准
+absolute / 绝对定位不在占有原来的位置,脱标的
+position: fixed / 固定定位 / 不占有原来的位置,脱标的
+固定版心右侧位置方法 / 固定定位盒子left走50%,然后在margin-left走版心的一半
+position: sticky / 粘性定位 / 以浏览器可视窗口为参照点移动,粘性定位占有原来的位置
+定位叠放次序z-index: 999; / 数值越大越靠上
+加了绝对定位absolute的盒子不能设置margin: 0 auto; 需要通过计算来实现水平和垂直
+第一: left(top)走父级宽度的一半,然后在margin-lef(top)t: 负的自己盒子宽度的一半
+行内元素添加绝对定位或者固定定位,可以直接设置高度和宽度,不用转换
+display设置一个元素如何显示 / display: none / 隐藏元素 / display: block / 显示元素
+displau隐藏元素不占有位置 / visibility隐藏元素继续占有原来的位置
+overflow / 让一个元素在页面中是溢出部分隐藏
+cursor / 鼠标样式 / cursor: pointer / 鼠标经过变成小手
+cursor: not-allowed / 鼠标经过变成禁止符号
+outline / 表单轮廓线 / 给表单设置 / outline: none;样式后会取消默认的轮廓线
+textarea { resize: none } / 设置防止文本域拖
+placeholder / 设置表单的默认文字
+vertical-align: middle / 设置图片和行内元素或行内块元素的文字垂直对齐
+单行文字溢出文字显示省略号 / 第一步: white-space: nowrap / 强制一行显示
+第二步: 超出部分隐藏 / overflow: hidden;
+第三步: 超出部分用省略号显示 / text-overflow: ellipsis;
+多行文本溢出显示省略号 / 第一步: overfow: hidden / text-overflow: ellipsis;
+第二步: display: box / 设置弹性伸缩盒子模型
+第三步: line-clamp: 2; 显示在一个块元素显示的文本行数
+第四步: box-orient: vertical; 设置伸缩盒子对象的子元素排列方式
+header / 头部标签 / nav / 导航栏标签 / section / 大号的div / footer / 尾部标签
+html新增input类型 / type=url / email / time / month / number / tel手机号 / search
+search / 搜索框 / type='date' / 
+hetml新增选择器 / div[class^=ico] / 选择ico开头的全部元素 / [&=ico] / 选择结尾的
+ul :first(last)-child / 选择第一个最后一个元素 / ul :nth-child(2) / 选择第二个元素修改
+::after / ::before / 伪元素 / 必须有content属性,伪元素权重为1
+box-sizing: border-box / 使用盒子模型padding和border就不会撑大盒子
+calc(100% - 30); / calc()函数多用于嵌套盒子中的子级盒子使用表示宽高
+transition: all 0.3s; / 谁做过渡给谁添加
+background-size: 让我们重新在不同的环境中指定背景图片的大小
+transform: translate(x,y) / 移动位置 / translate对行内元素没有效果
+transform: rotate(度数(deg) / 45deg) / 设置元素旋转
+transform-origin: x y / 设置旋转中心点
+transform: scale(数值 / 1.1) / 表示元素缩放的
+动画序列 / 第一步: @keyframes 类名 {
+0% (from) { } / 百分之零的时候在哪里
+100% (to) { } / 百分之百的时候在哪里/
+infinite / 无限循环 / linear / 匀速循环
+display: flex; 转换为flex布局 / 任何容器都可以指定为flex布局
+通过父级设置flex布局,操作子级盒子的位置和排列的float和vertical-align属性以及clear将失效
+使用flex布局必须是嵌套类型的布局,父级中嵌套子级
+flex布局中,分为主轴和侧轴(x,y) / flex-direction设置主轴,子级跟着主轴排序 / 默认主轴是X轴
+flex-direction: column / 主轴设置为Y轴
+flex-wrap: wrap; / 元素一行显示不开换行显示
+justify-content: content / 设置主轴上子级的排列顺序居中显示
+justify-content: space-between; / 设置两边贴边在分配剩余空间
+justify-content: content; 如果主轴是Y轴,就是设置元素垂直居中
+align-itmes: center; / 设置侧轴上元素的居中 / 只适合单行的情况
+align-content / 设置侧轴上子元素的排列方式(多行情况下)
+align-content: space-between; / 设置多行元素上下对齐
+flex-flow: column wrap; / 主轴设置为Y轴,表示要换行 / 符合属性: 选择主轴和是否换行的简写
+flex子项占的份数 / 属性定义子项分配剩余空间,用flex表示占多少份数 / flex: 1;分一份
+align-self / 控制子项自己在侧轴的排列方式,需要单独给子级盒子使用
+min-width / 最小宽度 / max-height / 最大高度
+background: -wedkit-linear-gradient(方向名词, 颜色值, 颜色值) / 设置背景渐变
+rem单位 / em是父级元素字体大小 / rem是相对于html元素的字体大小
+给根元素html设置font-size=12px / 非根元素设置width:2rem换成px表示24px
+@media screen and (max-width: 800px) { } / 在屏幕上最大宽度是800 / 小于等于800不会超过
+引入资源针对不同屏幕尺寸调用不同css文件 / 
+格式: <link rel='stylesheet' href='css文件' media screen and (min-width: 800px)>
+通过document.getElementById (''); / 方法可以获取带有id的元素
+通过document.getElementsByTagName(''); / 方法可以带有指定标签名的对象的集合所有的
+通过document.getElementsByClassName(''); / 根据类名获取某些元素的集合
+通过document.querySelector('.box'); 返回指定选择器的第一个元素对象
+通过document.querySelectorAll('#box') / 返回指定选择器所有元素的集合
+element.innerHTML 改变元素内容,不识别html标签/ onclick / 点击
+innerHTML可以操作修改属性, src / href / id / alt / title / innerHTML = '学习资料'
+dom可以操作表单元素属性 / type / value / checked / disabled、
+disabled = true / 禁用一个按钮
+element.style / 行内样式操作 / 修改元素的大小,颜色,位置
+onfocus / 表示表单获得了焦点的时候 / onblur / 表示表单失去了焦点的时候
+element.className / 用于修饰样式比较多的情况,样式写在css,最后
+在函数中调用类名
+className会直接更改元素的类名,会覆盖原先的类名
+onmouseover / 鼠标经过事件 / onmouseout / 鼠标离开事件
+var tr = document.querySelector('tobody').querySelectorAll('tr') / 获取父级中的子级必须这么
+element.getAttribute('index') / 获取我们自己添加的属性值,可以获取自定义属性值
+element.setAttribute('属性', '值') / 添加属性和值
+element.removeAttribute / 移除属性
+element.parentNode / 获得父级节点,element是获得的子级节点
+element.children / 获得子级节点,element是获取的父级节点
+element.children[element.children.lenght - 1]; / 获取子级元素最后一个元素
+element.nextElementSibling / 获取下一个兄弟的元素节点 / element是兄弟级
+element.previousElementSibling / 获取上一个兄弟的元素节点 / element是兄弟级
+document.createElement('li'); / 创建一个节点元素
+node.appendChild(li) / 在末尾添加一个节点元素 / node是父级,child是要添加的子级
+node.insertBefore(创建一个元素, 添加元素)
+node.insertBefore(li, ul.children[0]) / 添加元素给ul的第一个
+node.removeChild(ul.children[0]) / 删除元素 / 删除ul中的第一个元素
+<a href='javascript:;'></a> / 阻止链接跳转Courie
+node.cloneNode() / 拷贝节点 / 如果括号为空或者false,则是浅拷贝,复制本身,不复制子节点
+ul.children[0].cloneNode(); / 克隆ul中第一个li / 括号中为true则为深拷贝,会复制节点本身里面的
+addEventListener() / 方法监听注册方式
+btn.addEventListener(click, fucntion() { }) / 监听事件格式 / 可以添加多个事件处理器
+删除事件的方式 / element(this).onclick = null; / 只能点击一次事件 / 传统方式
+删除事件 / element(this).removeEventListener('click',fn) / 不能使用匿名函数写事件,fn不用括号
+如果addEventListener第三个参数是true则处于捕获阶段 / 先执行父级有事件的
+如果addEventListener第三个参数是flase则处于冒泡阶段 / 先执行自己的事件
+事件对象是事件的一系列数据的集合,跟事件相关比如鼠标点击里面包含了鼠标的相关信息
+event.target / 返回的是谁触发了这个事件对象
+event.preventDefault() / 阻止默认行为(事件)让链接不跳转或者让提交按钮不提交
+event.stopPropagation(); / 阻止事件冒泡,要阻止谁就给谁添加
+事件委托原理: 不给每一个字节点设置监听器,给父节点设置,然后利用冒泡原理影响字节点
+event.target; / 我们可以得到我们点击的对象,也就是我们点击了谁
+contextmenu / 禁止鼠标右键菜单事件 / 设置事件对象 / event.preventDefault(); 实现
+selectstart / 禁止鼠标选中事件,只要选择文字就触发 / 事件对象 event.preventDefault(); 
+鼠标事件对象 / pageX和pageY得到鼠标在文档的坐标
+mousemove / 鼠标移动事件,只要鼠标移动就会触发事件
+keyup / 键盘事件 / 当键盘按下弹起的时候触发 / 不区分字母大小写
+keydown / 键盘事件 / 当键盘按下单时候就触发 / 不区分字母大小写
+keypress / 键盘事件 / 按下某个键盘时触发,它不能识别功能键 / 区分字母大小写
+键盘事件对象属性 / keyCode / 返回该键盘的ascii值
+focus / 获得焦点 / blur / 失去焦点
+window.onload是窗口(页面)加载事件,当文档内容完全加载完成才触发的事件
+DOMContentLoaded / 窗口事件,等着页面加载完时才触发的事件
+resize / 窗口大小事件,只要窗口发生改变就会触发的事件
+window.innerWidth / 窗口的宽度 / window.innerHeight / 窗口高度
+setTimeout() / 定时器,该定时器到期后执行调用函数,时间单位是毫秒,省略是立即执行
+setTimeout() / 这个调用函数也称为回调函数callback,因为需要等待时间所以叫回调函数
+停止setTImeout()定时器 / window.clearTimeout(timeout ID) / 括号里是回调函数的名字
+setInterval(调用函数, 延时时间) / 方法重复调用一个函数,每隔段时间就调用一次回调函数
+clearInterval(函数的名字) / 可以停止定时器的运行
+disabled = true; / 禁用按钮 / button使用innerHTML来修改内容
+对象中方法的this指向的是对象方法本身
+构造函数中的this指向的是实例对象
+location属性用于设置窗体的url并且可以解析,返回一个对象,称为location对象
+location.href = 'www.baidu.com'/ 给它一个新地址它会跳转到新地址上面去;
+location.replace('网址') / 可以跳转,记录浏览历史,所以可以实现后退功能
+location.reload() / 重新加载页面,相当于刷新按钮
+navigator对象包含有关浏览器的信息
+history对象,与浏览器历史记录进行交互
+history对象方法 / history.forward() / 前进功能 / history.back() / 可以后退功能
+element.offsetTop(Left) / 返回元素带有定位父级的上方边偏移
+element.offsetWidth(Height) / 返回元素带有定位父级的宽度
+mousemove / 鼠标移动事件 / mouseup / 鼠标弹起事件
+pageshow是重新加载页面触发的事件
+scroll可以动态得到元素的大小,滚动距离等等
+scrool事件 / 只要鼠标滚动就会触发的事件
+scroll.Width(bottom) / scroll.Height(top) / 返回自身的宽度和高度
+window.pageYoffset 和 window.pageXoffset / 整个页面失去的面积用
+mouseenter和mouseover的区别
+mouseover鼠标经过自身盒子会触发,经过子盒子也会触发 / mouseover会冒泡
+mouseenter只会经过自身盒子的时候才会触发 / mouseenter不会冒泡
+mouseleave / 鼠标离开事件,同样不会冒泡
+mouseenter / 鼠标经过事件
+动画实现原理: 通过定时器setinterval( )不断移动盒子位置,此元素必须添加定位才能使用
+ offsetLeft / 得到盒子在文档中当前的X位置
+封装动画函数obj为目标对象, target为目标位置,必须传递着两个参数进去
+缓动动画就是让元素速度有所变化,让速度慢慢停下来
+缓动动画公式: (目标值-现在的位置)除以10 / 让当前盒子位置等于目标位置就停止定时器
+本地存储是存储在用户浏览器中的,设置,读取方便,甚至页面刷新也不丢数据
+生命周期为关闭浏览器窗口,在同一个窗口(页面)下数据可以共享
+sessionStorage.setitem('uanme', val) / 第一个是值类型,第二个是内容value  / 存储数据
+sessionStorage.getitem('uanme'); / 获取存储的数据
+sessionStorage.removeitem('uname'); / 删除存储的数据
+sessionStorage.clear(); / 清除删除所有的数据
+localStorage / 生命周期永久生效,除非手动删除否则关闭页面也会存在
+localStorage / 可以多个窗口页面共享(同一浏览器)
+localStorage.setitem('uanme', val) / 第一个是值类型,第二个是内容value  / 存储数据
+local.Storage.getitem('uanme'); / 获取存储的数据
+local.Storage.removeitem('uname'); / 删除存储的数据
+local.Storageclear.clear(); / 清除删除所有的数据
+change事件,当发生改变的时候调用,文本框内容发生改变时调用
